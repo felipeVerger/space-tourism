@@ -1,0 +1,75 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.block-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+
+}
+
+.text-heading {
+    font-family: var(--font-base);
+    color: var(--gray-color);
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--white-color);
+    font-size: 9em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: var(--font-base);
+    color: var(--gray-color);
+    font-size: 1.2em;
+    width: 90%;
+    line-height: 30px;
+}
+
+.explore-btn {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    border: none;
+    font-family: var(--font-heading);
+    font-size: 2em;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media screen and (max-width: 1214px) {
+    .container {
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 8rem;
+        background-image: url('../../assets/home/background-home-mobile.jpg');
+    }
+    .block-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

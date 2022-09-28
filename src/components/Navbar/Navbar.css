@@ -1,0 +1,138 @@
+.nav-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.nav-container img {
+    width: 110px;
+    height: 110px;
+}
+
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation hr {
+    width: 100%;
+    border: 1px solid var(--gray-color);
+}
+
+.list {
+    height: 70px;
+    width: 100%;
+    background-color: hsla(0,0%,59%,.04);
+    backdrop-filter: blur(14px) saturate(134%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.list-items {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white-color);
+    font-family: var(--font-base);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.list-items.active {
+    border-bottom: 1px solid var(--white-color);
+}
+
+.list-items:hover {
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--gray-color);
+    text-transform: uppercase;
+}
+
+.hamburger {
+    font-size: 2em;
+    color: var(--white-color);
+    display: none;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    min-height: 100vh;
+    background-color: hsla(0,0%,59%,.04);
+    backdrop-filter: blur(14px) saturate(134%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.close-icon {
+    font-size: 2em;
+    color: var(--white-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.mobile-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    list-style: none;
+}
+
+.mobile-list-items {
+    font-family: var(--font-base);
+    font-size: 1.5em;
+    color: var(--white-color);
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-list-items:hover {
+    border-bottom: 1px solid var(--white-color);
+}
+
+@media screen and (max-width: 1352px) {
+    .navigation hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav-container {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .nav-container img {
+        width: 80px;
+        height: 80px;
+    }
+    .navigation {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}

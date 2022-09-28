@@ -1,0 +1,121 @@
+.tech-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 10rem 0 8rem 10rem;
+}
+
+.tech-content-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.tech-btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tech-btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--white-color);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.3rem;
+    font-family: var(--font-base);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.tech-btn.active {
+    background-color: var(--white-color);
+    color: black;
+}
+
+.tech-btn:hover {
+    background-color: var(--white-color);
+    color: black;
+}
+
+.tech-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tech-info h4 {
+    font-family: var(--font-base);
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--gray-color);
+    text-transform: uppercase;
+}
+
+.tech-info h2 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    font-weight: 300;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.tech-info p {
+    width: 70%;
+    font-family: var(--font-base);
+    font-size: 1.4em;
+    color: var(--gray-color);
+    line-height: 1.5;
+}
+
+.tech-img {
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 1214px) {
+    .tech-container {
+        height: 100%;
+        background-image: url(../../assets/technology/background-technology-tablet.jpg);
+        flex-direction: column-reverse;
+        padding: 4rem;
+    }
+    .tech-content-block {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .tech-btn-list {
+        flex-direction: row;
+    }
+    .tech-info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .tech-container {
+        background-image: url(../../assets/technology/background-technology-mobile.jpg);
+    }
+    .tech-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
