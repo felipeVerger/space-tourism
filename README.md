@@ -57,6 +57,6 @@ Despite everything I learned about framer motion, this library has so many funct
 
 ## Author
 
-- Website - [Felipe Verger](https://www.your-site.com)
+- Website - [Felipe Verger](https://felipeverger.netlify.app)
 - Frontend Mentor - [@felipeVerger](https://www.frontendmentor.io/profile/felipeVerger)
 
